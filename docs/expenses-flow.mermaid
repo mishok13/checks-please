@@ -1,0 +1,11 @@
+---
+title: Group expense
+---
+stateDiagram-v2
+    [*] --> Open
+
+    Open --> Archived
+    Open --> Settled
+    Settled --> Open
+    Settled --> Archived
+    Archived --> [*]
