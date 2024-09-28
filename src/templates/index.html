@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/htmx.org@2.0.2"
+            integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ"
+            crossorigin="anonymous">
+    </script>
+  </head>
+  <body hx-headers='{"Authorization": "{{ username }}"}'>
+
+    <section>
+      <h2><a href="#" hx-get="/groups">Groups</a></h2>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2><a hx-get="/expenses">Expenses</a></h2>
+    </section>
+
+  </body>
+
+</html>
